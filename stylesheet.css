@@ -1,189 +1,212 @@
 body {
-    margin: 0;
-    background-color: #6d0605;
+  margin: 0;
+  background-color: #6d0605;
 }
 
 img {
-    width: 50px;
-    height: 50px;
-    margin: 10px 10px 0 10px;
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px 0 10px;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    color: white;
-    background-color: #6d0605;
-    z-index: 1000;
-    padding-top: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  color: white;
+  background-color: #6d0605;
+  z-index: 1000;
+  padding-top: 5px;
 }
 
 div p {
-    margin-left: 0;
-    width: 100%;
+  margin-left: 0;
+  width: 100%;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 nav ul {
-    display: flex;
-    padding-right: 60px;
+  display: flex;
+  padding-right: 60px;
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 9px 20px 0 0;
-    font-size: 19px;
+  list-style: none;
+  display: inline-block;
+  margin: 9px 20px 0 0;
+  font-size: 19px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .menu-icon {
-    font-size: 35px;
-    margin: 9px 5px 8px 15px;
-    cursor: pointer;
-    color: white;
+  font-size: 35px;
+  margin: 9px 5px 8px 15px;
+  cursor: pointer;
+  color: white;
 }
 
 .Home_background {
-    display: flex;
-    margin-top: 80px;
-    height: 580px;
-    position: relative;
+  display: flex;
+  margin-top: 80px;
+  height: 580px;
+  position: relative;
 }
 
 .Home_background > div {
-    flex: 1;
-    position: relative;
+  flex: 1;
+  position: relative;
 }
 
 .Obli {
-    background-image: url('https://shorturl.at/WBwfc');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+  background-image: url('https://shorturl.at/WBwfc');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 .Bname {
-    background-image: url('https://shorturl.at/glgbr');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    
+  background-image: url('https://shorturl.at/glgbr');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  
 }
 
 .shade,
 .Name {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .shade {
-    background: linear-gradient(to left, #6d0605, rgba(109, 7, 5, 0.5), rgba(109, 7, 5, 0.2) 50%, rgba(109, 7, 5, 0));
+  background: linear-gradient(to left, #6d0605, rgba(109, 7, 5, 0.5), rgba(109, 7, 5, 0.2) 50%, rgba(109, 7, 5, 0));
 }
 
 .Name {
-    padding: 180px 50px 0 20px;
-    color: white;
-    background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.7));
-    font-family: Arial, Helvetica, sans-serif;
-    height: 69%;
+  padding: 180px 50px 0 20px;
+  color: white;
+  background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.7));
+  font-family: Arial, Helvetica, sans-serif;
+  height: 69%;
 }
 
 .upconnect {
-    font-size: 90px;
-    font-weight: bold;
-    margin: 0;
-    margin-bottom: -25px;
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: -25px;
 }
 
 .UPconnect {
-    font-size: 90px;
-    font-weight: bold;
-    margin: 0;
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .up {
-    color: white;
+  color: white;
 }
 
 .values {
-    margin-top: 5px;
-    margin-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .wconnect {
-    color: #ffbd59;
+  color: #ffbd59;
 }
 
 .university-text {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0 12px;
-    width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 12px;
+  width: 800px;
 }
 
 .university-text .up {
-    font-size: 30px;
-    margin: 0;
-    line-height: 1;
+  font-size: 30px;
+  margin: 0;
+  line-height: 1;
 }
 
 .university-text .down {
-    font-size: 16px;
-    margin: 0;
-    line-height: 1;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .items {
-    flex-grow: 1;
-    flex-basis: 200;
+  flex-grow: 1;
+  flex-basis: 200;
 }
 
 
 /*Our Services na Part*/
-  .Services_background{
-    background-image: url('https://shorturl.at/rIgz9');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: #273811;
-    margin-top: -15px;
-    padding-top: 0;
-  }
+.Services_background{
+  background-image: url('https://shorturl.at/rIgz9');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #273811;
+  margin-top: -15px;
+  padding-top: 0;
+}
 
-  .services_container{
-    width: 100%;
-    height: auto;
-  }
+.services_container{
+  max-width: fit-content;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-  .box{
-    width: 200px;
-    height: 200px;
-    background-color: white;
-  }
+.box{
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: 26px;
+  margin: 10px;
+  border-style: solid ;
+  border-color: #b8b8b8;
+  flex-grow: 1;
+}
+
+.box img{
+  border-radius: 20px;
+}
+
+.box-title{
+  font-size: 35px;
+  text-align: center;
+}
+
+.box-desc{
+  font-size: 19.5px;
+  text-align: justify;
+}
 
 
-
-  
