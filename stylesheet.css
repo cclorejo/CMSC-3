@@ -145,11 +145,25 @@ body {
     flex-grow: 1;
     flex-basis: 200;
   }
+
+/*Our Services na Part*/
   .Services_background{
     background-image: url('https://shorturl.at/rIgz9');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: #273811;
+  }
+
+  .services_container{
+    width: 100%;
+    height: auto;
+  }
+
+  .box{
+    width: 200px;
+    height: 200px;
+    background-color: white;
   }
 
 
