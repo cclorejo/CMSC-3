@@ -1,15 +1,15 @@
 body {
     margin: 0;
     background-color: #6d0605;
-  }
-  
-  img {
+}
+
+img {
     width: 50px;
     height: 50px;
     margin: 10px 10px 0 10px;
-  }
-  
-  .header {
+}
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,141 +19,148 @@ body {
     background-color: #6d0605;
     z-index: 1000;
     padding-top: 5px;
-  }
-  
-  div p {
+}
+
+div p {
     margin-left: 0;
     width: 100%;
-  }
-  
-  nav {
+}
+
+nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     display: flex;
     padding-right: 60px;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     list-style: none;
     display: inline-block;
     margin: 9px 20px 0 0;
     font-size: 19px;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: white;
-  }
-  
-  .menu-icon {
+}
+
+.menu-icon {
     font-size: 35px;
     margin: 9px 5px 8px 15px;
     cursor: pointer;
     color: white;
-  }
-  
-  .Home_background {
+}
+
+.Home_background {
     display: flex;
     margin-top: 80px;
-    height: 600px;
-  }
-  
-  .Home_background > div {
+    height: 580px;
+    position: relative;
+}
+
+.Home_background > div {
     flex: 1;
     position: relative;
-  }
-  
-  .Obli {
+}
+
+.Obli {
     background-image: url('https://shorturl.at/WBwfc');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-  
-  .Bname {
-        background-image: url('https://shorturl.at/glgbr');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center; 
-    }
-  
-  .shade,
-  .Name {
+    height: 100%;
+}
+
+.Bname {
+    background-image: url('https://shorturl.at/glgbr');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    
+}
+
+.shade,
+.Name {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  .shade {
+}
+
+.shade {
     background: linear-gradient(to left, #6d0605, rgba(109, 7, 5, 0.5), rgba(109, 7, 5, 0.2) 50%, rgba(109, 7, 5, 0));
-  }
-  
-  .Name {
-        padding: 180px 50px;
-        color: white;
-        background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.7));
-        font-family:Arial, Helvetica, sans-serif;    
-    }
+}
 
-  .upconnect {
-        font-size: 90px;
-        font-weight: bold;
-        margin: 0;
-        margin-bottom: -25px;
-    }
+.Name {
+    padding: 180px 50px 0 20px;
+    color: white;
+    background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.7));
+    font-family: Arial, Helvetica, sans-serif;
+    height: 69%;
+}
 
-  .UPconnect {
-        font-size: 90px;
-        font-weight: bold;
-        margin: 0;
-    }
+.upconnect {
+    font-size: 90px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: -25px;
+}
 
-  .up {
-        color: white; /* Color for "Up" */
-    }
+.UPconnect {
+    font-size: 90px;
+    font-weight: bold;
+    margin: 0;
+}
 
- .values {
-        margin-top: 5px;
-    }
-  
-  .wconnect {
+.up {
+    color: white;
+}
+
+.values {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.wconnect {
     color: #ffbd59;
-    }
-  
-  .university-text {
+}
+
+.university-text {
     display: flex;
     flex-direction: column;
     margin: 10px 0 12px;
     width: 800px;
-  }
-  
-  .university-text .up {
+}
+
+.university-text .up {
     font-size: 30px;
     margin: 0;
     line-height: 1;
-  }
-  
-  .university-text .down {
+}
+
+.university-text .down {
     font-size: 16px;
     margin: 0;
     line-height: 1;
-  }
+}
 
-  .container{
+.container {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .items{
+}
+
+.items {
     flex-grow: 1;
     flex-basis: 200;
-  }
+}
+
 
 /*Our Services na Part*/
   .Services_background{
@@ -162,6 +169,8 @@ body {
     background-size: cover;
     background-position: center;
     color: #273811;
+    margin-top: -15px;
+    padding-top: 0;
   }
 
   .services_container{
