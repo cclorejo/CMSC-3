@@ -74,11 +74,11 @@ body {
   }
   
   .Bname {
-    background-image: url('https://shorturl.at/glgbr');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+        background-image: url('https://shorturl.at/glgbr');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
   
   .shade,
   .Name {
@@ -94,23 +94,32 @@ body {
   }
   
   .Name {
-    padding: 180px 50px;
-    color: white;
-    background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.7));
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
+        padding: 180px 50px;
+        color: white;
+        background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.7));
+        font-family:Arial, Helvetica, sans-serif;    
+    }
+
   .upconnect {
-    font-size: 90px;
-    margin: -18px;
-    position: relative;
-    z-index: 1;
-    font-weight: bold;
-  }
-  
-  .values {
-    margin-top: 25px;
-  }
+        font-size: 90px;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: -25px;
+    }
+
+  .UPconnect {
+        font-size: 90px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+  .up {
+        color: white; /* Color for "Up" */
+    }
+
+ .values {
+        margin-top: 5px;
+    }
   
   .wconnect {
     color: #ffbd59;
