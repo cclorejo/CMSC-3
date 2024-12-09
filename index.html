@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBL UpConnect</title>
-    <link rel="stylesheet" href="TryCMSC3project.css">
-</head>
 <body>
 <!-- HOME-->   
     <div class="header">
@@ -15,8 +7,18 @@
             <p class="up">University of the Philippines</p>
             <p class="down">Mindanao</p>
         </div>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Requirements</a></li>
+                <li><a href="">Slots</a></li>
+                <li><a href="">Permit Forms</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
             
-        <nav>
+        <nav class="mobile-nav" id="mobileNav">
             <ul>
                 <li><a href="">About</a></li>
                 <li><a href="">Requirements</a></li>
@@ -70,5 +72,15 @@
         </div> 
     </div>
 
+    <script>
+        function toggleMenu() {
+            var mobileNav = document.getElementById("mobileNav");
+            if (mobileNav.style.display === "flex") {
+                mobileNav.style.display = "none";
+            } else {
+                mobileNav.style.display = "flex";
+            }
+        }
+    </script>
+
 </body>
-</html>
