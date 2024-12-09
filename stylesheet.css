@@ -1,15 +1,15 @@
 body {
     margin: 0;
     background-color: #6d0605;
-  }
+}
   
-  img {
+img {
     width: 50px;
     height: 50px;
-    margin: 10px 10px 0 10px;
-  }
+    margin: 0 10px 0 15px;
+}
   
-  .header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,166 +18,215 @@ body {
     color: white;
     background-color: #6d0605;
     z-index: 1000;
-    padding-top: 5px;
-  }
+    padding: 10px 0 11px 0;
+    justify-content: space-between;
+}
   
-  div p {
+div p {
     margin-left: 0;
     width: 100%;
-  }
+}
   
-  nav {
+.desktop-nav {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
+    align-items: center;
+    margin-right: -40px;    
+}
   
-  nav ul {
+.desktop-nav ul {
     display: flex;
     padding-right: 60px;
-  }
+    margin: 0;
+}
   
-  nav ul li {
+.desktop-nav ul li {
     list-style: none;
     display: inline-block;
-    margin: 9px 20px 0 0;
+    margin: 0 15px;
     font-size: 19px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .menu-icon {
-    font-size: 35px;
-    margin: 9px 5px 8px 15px;
+}
+
+.mobile-nav {
+    display: none; /*Hide menu when screen size decreases*/
+}
+
+/*The hamburger icon*/
+.menu-icon {
+    font-size: 38px;
+    margin: 9px -5px 8px 5px; 
     cursor: pointer;
     color: white;
-  }
+    position: absolute;
+    top: 0;  
+    right: 20px;  
+    display: none;  
+    padding-top: -1px;
+}
+
+@media (max-width: 1007px) {
+    /* Hide Desktop Navigation on small screens */
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Show menu when the hamburger icon is clicked */
+    .mobile-nav {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        background-color: #6d0605;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-nav ul li {
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    /* Show Hamburger Icon on small screens */
+    .menu-icon {
+        display: block;
+    }
+}
   
-  .Home_background {
+a {
+    text-decoration: none;
+    color: white;
+}
+  
+.Home_background {
     display: flex;
-    margin-top: 80px;
-    height: 580px;
+    margin-top: 60px;
+    height: 600px;
     position: relative;
-  }
+}
   
-  .Home_background > div {
+.Home_background > div {
     flex: 1;
     position: relative;
-  }
+}
   
-  .Obli {
+.Obli {
     background-image: url('https://shorturl.at/WBwfc');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100%;
-  }
+}
   
-  .Bname {
+.Bname {
     background-image: url('https://shorturl.at/glgbr');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100%;
     
-  }
+}
   
-  .shade,
-  .Name {
+.shade,
+.Name {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-  }
+}
   
-  .shade {
+.shade {
     background: linear-gradient(to left, #6d0605, rgba(109, 7, 5, 0.5), rgba(109, 7, 5, 0.2) 50%, rgba(109, 7, 5, 0));
-  }
+}
   
-  .Name {
+.Name {
     padding: 180px 50px 0 20px;
     color: white;
     background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.7));
     font-family: Arial, Helvetica, sans-serif;
     height: 69%;
-  }
+}
   
-  .upconnect {
+.upconnect {
     font-size: 90px;
     font-weight: bold;
     margin: 0;
     margin-bottom: -25px;
-  }
+}
   
-  .UPconnect {
+.UPconnect {
     font-size: 90px;
     font-weight: bold;
     margin: 0;
-  }
+}
   
-  .up {
+.up {
     color: white;
-  }
+}
   
-  .values {
+.values {
     margin-top: 5px;
     margin-bottom: 0;
-  }
+}
   
-  .wconnect {
+.wconnect {
     color: #ffbd59;
-  }
+}
   
-  .university-text {
+.university-text {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 10px 0 12px;
-    width: 800px;
-  }
+    justify-content: center;
+}
   
-  .university-text .up {
+.university-text .up {
     font-size: 30px;
     margin: 0;
     line-height: 1;
-  }
+}
   
-  .university-text .down {
+.university-text .down {
     font-size: 16px;
     margin: 0;
     line-height: 1;
-  }
+}
   
-  .container {
+.container {
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
-  .items {
+.items {
     flex-grow: 1;
     flex-basis: 200;
-  }
+}
   
   
-  /*Our Services na Part*/
-  .Services_background { 
+/*Our Services na Part*/
+.Services_background { 
     padding: 2rem;
     background-image: url('https://i.ibb.co/H4fR1rL/WEBSITE-DESIGN-1.png');
     background-size: cover;
     background-position: center;
-  }
+}
   
-  .services_container {
+.services_container {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap; 
-  }
+}
   
-  .box {
+.box {
     background: #fff;
     border: 4px solid #b8b8b8;
     border-radius: 26px;
@@ -185,32 +234,32 @@ body {
     width: 450px; 
     text-align: center;
     overflow: hidden;
-  }
+}
   
-  /* Image Styling */
-  .box img {
+/* Image Styling */
+.box img {
     overflow: hidden;
     width: 94%;
     height: auto;
     border-radius: 12px;
-  } 
+} 
   
-  /* Box Title Styling */
-  .box-title {
+/* Box Title Styling */
+.box-title {
     font-size: 1.25rem;
     font-weight: bold;
     color: #2b2b2b;
     margin: 0.5rem 0;
-  }
+}
   
-  .box-desc {
+.box-desc {
     max-width: fit-content;
     font-size: 19.5px;
     text-align: justify;
     padding: 5%;
-  }
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .services_container {
       flex-direction: column;
       align-items: center;
@@ -219,4 +268,4 @@ body {
     .box {
       width: 90%;
     }
-  }
+}
