@@ -102,6 +102,7 @@ div p {
     /* Show Hamburger Icon on small screens */
     .menu-icon {
         display: block;
+        margin-top: 5px;
     }
 }
 
@@ -226,6 +227,7 @@ a {
 @media (max-width: 480px) {
     .university-text .up {
         font-size: 20px;
+        margin-top: 1px;
     }
 }
 
