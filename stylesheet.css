@@ -195,7 +195,7 @@ a {
 }
 
 .up, .wconnect, .UPconnect, .upconnect {
-    font-size: 8vw; /* Adjusts the font size based on the viewport width */
+    font-size: 8vw;
 }
 
 .values {
@@ -232,8 +232,8 @@ a {
 /* Media query for smaller screens */
 @media (max-width: 860px) {
     .up, .wconnect, .UPconnect, .upconnect {
-        font-size: 10vw; /* Reduced the font size to prevent overlap */
-        margin-bottom: -15px; /* Increased margin to avoid overlap */
+        font-size: 10vw; 
+        margin-bottom: -15px; 
         
     }
 
@@ -250,13 +250,13 @@ a {
 
 @media (max-width: 480px) {
     .up, .wconnect, .UPconnect, .upconnect {
-        font-size: 15vw; /* Adjust text size further on very small screens */
-        margin-bottom: -15px; /* Adds more spacing to prevent overlap */
+        font-size: 15vw; 
+        margin-bottom: -15px; 
     }
 
     .values {
         font-size: 3.2vw;
-        line-height: 1.6; /* Ensure smooth text on small screens */
+        line-height: 1.6; 
     }
 }
   
