@@ -99,6 +99,14 @@ div p {
         display: block;
     }
 }
+
+@media (max-width: 480px) {
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 3px 7px 0 10px;
+    }
+}
   
 a {
     text-decoration: none;
@@ -148,22 +156,20 @@ a {
 }
   
 .Name {
-    padding: 180px 50px 0 20px;
+    padding: 150px 0 0 20px;
     color: white;
     background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.7));
     font-family: Arial, Helvetica, sans-serif;
-    height: 70%;
+    height: 75%;
 }
   
 .upconnect {
-    font-size: 90px;
     font-weight: bold;
     margin: 0;
     margin-bottom: -25px;
 }
   
 .UPconnect {
-    font-size: 90px;
     font-weight: bold;
     margin: 0;
 }
@@ -179,6 +185,16 @@ a {
   
 .wconnect {
     color: #ffbd59;
+}
+
+.up, .wconnect, .UPconnect, .upconnect {
+    font-size: 7vw; /* Adjusts the font size based on the viewport width */
+}
+
+.values {
+    font-size: 1.5vw;
+    line-height: 1.4;
+    margin-top: 15px;
 }
   
 .university-text {
@@ -198,6 +214,36 @@ a {
     font-size: 16px;
     margin: 0;
     line-height: 1;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .up, .wconnect, .UPconnect, .upconnect {
+        font-size: 10vw; /* Reduced the font size to prevent overlap */
+        margin-bottom: 1px; /* Increased margin to avoid overlap */
+        
+    }
+
+    .values {
+        font-size: 2vw;
+        line-height: 1.6;
+    }
+
+    .Obli {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .up, .wconnect, .UPconnect, .upconnect {
+        font-size: 15vw; /* Adjust text size further on very small screens */
+        margin-bottom: -15px; /* Adds more spacing to prevent overlap */
+    }
+
+    .values {
+        font-size: 3.2vw;
+        line-height: 1.6; /* Ensure smooth text on small screens */
+    }
 }
   
 .container {
