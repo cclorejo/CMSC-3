@@ -195,7 +195,7 @@ a {
 }
 
 .up, .wconnect, .UPconnect, .upconnect {
-    font-size: 7vw; /* Adjusts the font size based on the viewport width */
+    font-size: 8vw; /* Adjusts the font size based on the viewport width */
 }
 
 .values {
@@ -223,8 +223,14 @@ a {
     line-height: 1;
 }
 
+@media (max-width: 480px) {
+    .university-text .up {
+        font-size: 20px;
+    }
+}
+
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 860px) {
     .up, .wconnect, .UPconnect, .upconnect {
         font-size: 10vw; /* Reduced the font size to prevent overlap */
         margin-bottom: -15px; /* Increased margin to avoid overlap */
