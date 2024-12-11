@@ -334,3 +334,20 @@ a {
       width: 90%;
     }
 }
+
+/*For Contacts*/
+.Contact_Page {
+    display: flex;
+    margin-top: 10px;
+    height: 600px;
+    position: relative;
+}
+  
+.Contact_Page > div {
+    flex: 1;
+    position: relative;
+}
+  
+.contacts_container{
+    background-color: #6d0605;
+}
