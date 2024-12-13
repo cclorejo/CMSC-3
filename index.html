@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBL UpConnect</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="navigation_bar.css">
+    <link rel="stylesheet" href="home_page.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/2nNpfB4/Untitled-design-24.png">
 </head>
 <body>
-<!-- HOME-->   
+<!-- NAVIGATION-->   
     <div class="header">
         <span class="menu-icon" onclick="toggleMenu()">☰</span>
         <img id="homeLogo" src="https://i.ibb.co/2nNpfB4/Untitled-design-24.png" alt="">
@@ -37,7 +40,9 @@
             </ul>
         </nav>
         
+        
     </div>
+<!-- HOME PAGE-->  
     <div class="Home_background">
         <div class="Obli">
             <div class="shade"></div>
@@ -46,9 +51,10 @@
         <div class="Bname">
             <div class="Name">
                 <p class="upconnect">EBL</p>
-                <p class="UPconnect">
-                    <span class="up">Up</span><span class="wconnect">Connect</span>
+                <p class="upconnect">
+                    <span>Up</span><span class="wconnect">Connect</span>
                 </p>
+                <br><br>
                 <p class="values"><i>"Honor, Excellence, and Service"</i></p>
                     
             </div>
@@ -144,7 +150,6 @@
         </div>
     </div>
 
-
     <div class="Contacts_Obli">
         <div class="shade-left"></div>
     </div>
@@ -152,6 +157,7 @@
 
     <!--JAVA SCRIPT PART-->
     <script>
+
         // Get the image by its ID
         const homeLogo = document.getElementById("homeLogo");
 
@@ -167,6 +173,11 @@
         down.addEventListener("click", function () {
             window.location.href = "index.html"; // Replace 'index.html' with your homepage URL
         });
+
+            // Function to update the progress bar based on scroll position
+    
+
+
         function toggleMenu() {
             var mobileNav = document.getElementById("mobileNav");
             if (mobileNav.style.display === "flex") {
