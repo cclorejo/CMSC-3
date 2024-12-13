@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBL UpConnect</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- HOME-->   
     <div class="header">
         <span class="menu-icon" onclick="toggleMenu()">☰</span>
-        <img src="upmin/logo.com" alt="">
+        <img id="homeLogo" src="https://i.ibb.co/2nNpfB4/Untitled-design-24.png" alt="">
         <div class="university-text">
-            <p class="up">University of the Philippines</p>
-            <p class="down">Mindanao</p>
+            <p id="up">University of the Philippines</p>
+            <p id="down">Mindanao</p>
         </div>
             
         <nav class="desktop-nav">
@@ -149,18 +150,23 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
     <!--JAVA SCRIPT PART-->
     <script>
+        // Get the image by its ID
+        const homeLogo = document.getElementById("homeLogo");
+
+        // Add a click event listener to redirect to the homepage
+        homeLogo.addEventListener("click", function () {
+            window.location.href = "index.html"; // Replace 'index.html' with your homepage URL
+        });
+
+        up.addEventListener("click", function () {
+            window.location.href = "index.html"; // Replace 'index.html' with your homepage URL
+        });
+
+        down.addEventListener("click", function () {
+            window.location.href = "index.html"; // Replace 'index.html' with your homepage URL
+        });
         function toggleMenu() {
             var mobileNav = document.getElementById("mobileNav");
             if (mobileNav.style.display === "flex") {
@@ -171,5 +177,22 @@
         }
     </script>
 
+<footer>
+    <div class="contact_us">
+
+    </div>
+    <div class="credits">
+        <h1>WEB DEVELOPERS</h1>
+        <div class="web_dev">
+            <h2>JOE HANNA CANTERO</h2>
+            <p>
+                cclorejo@up.edu.ph<br>
+                09465505753<br>
+                University of the Philippines Mindanao - Mintal Davao City Davao del Sur 8000
+            </p>
+        </div>
+        
+    </div>
+</footer>
 </body>
 </html>
