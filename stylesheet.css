@@ -331,12 +331,14 @@ h3 {
 .Services_background > p{
     font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 0%;
 }
 .services_container {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap; 
+    margin-bottom: 50px;
 }
   
 .box {
@@ -382,10 +384,11 @@ h3 {
       width: 90%;
     }
 }
+
 /*For Contacts*/
 .Contact_Page {
     display: flex;
-    margin-top: 10px;
+    flex: 1;
     height: 600px;
     position: relative;
 }
@@ -393,23 +396,25 @@ h3 {
 .Contact_Page > div {
     flex: 1;
     position: relative;
+    margin-left: 2rem;
 }
   
-.contacts_container{
+.contacts_container {
     background-color: #6d0605;
     color: white;
     padding: 2rem;
+    height: 600px;
 }   
 
-.Contacts_Obli{
+.Contacts_Obli {
+    height: 600px;
     background-image: url('https://i.ibb.co/RpC9VFk/oblation-1-1-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
 }
 
-.shade-left{
+.shade-left {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -418,7 +423,54 @@ h3 {
     background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.5), rgba(109, 7, 5, 0.2) 50%, rgba(109, 7, 5, 0));
 }
 
-.contacts_container > p{
+.contacts_container > p {
     font-size: 2.5rem;
     font-weight: bold;
 }
+
+.point_person {
+    display: flex;
+    flex: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.point_person img {
+    margin-top: 3%;
+    overflow: hidden;
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+} 
+
+@media (max-width: 500px) {
+    .services_container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .Contacts_Obli {
+        display: none;
+    }
+
+    .Contact_Page {
+        flex-direction: column;
+        height: auto; /* Adjust height to fit content */
+    }
+
+    .contacts_container {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+}
+
+.point_person names{
+    margin-top: 3rem;
+}
+
