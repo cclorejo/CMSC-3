@@ -27,12 +27,14 @@
     box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.596); 
 }
 
-#up {
+#up{
+    font-size: 10px;
     color: #ffffff;
     text-shadow: 2px 2px 3px #0000003b;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
+
 }
 
 #down {
@@ -48,9 +50,9 @@ div p {
 }
 
 .desktop-nav {
-    white-space: nowrap; /* Prevents the text from wrapping to the next line */
-    max-width: 100%; /* Ensure it fits within its parent container */
-    display: inline-block; /* Keeps the element inline and shrinkable */
+    white-space: nowrap; 
+    max-width: 100%; 
+    display: inline-block; 
     align-items: center;
     margin-right: 15px; 
 }
@@ -74,7 +76,8 @@ div p {
 .desktop-nav ul li a:hover {
     text-shadow:1px 1px 10px #000000, 1px 1px 10px #000000;
     font-size: 16.5px;
-    transition: font 0.3s ease-in-out;
+    transition: font 1s ease-in;
+    transition: font 0.3s ease-out;
 }
 .desktop-nav ul li a::after {
     content: '';
@@ -116,8 +119,11 @@ div p {
     padding-top: -1px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1060px) {
     /* Hide Desktop Navigation on small screens */
+    #up{
+        font-size: 10px;
+    }
     .desktop-nav {
         display: none;
     }
@@ -164,5 +170,5 @@ div p {
   
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
