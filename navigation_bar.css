@@ -160,12 +160,18 @@ div p {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 412px) {
     img {
         width: 40px;
         height: 40px;
-        margin: 3px 7px 0 10px;
     }
+
+    #up{
+        scale: 0.7;
+
+
+    }
+   
 }
   
 a {
