@@ -3,172 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="requirements.css">
+    <link rel="stylesheet" href="navigation_bar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/2nNpfB4/Untitled-design-24.png">
     <title>EBL Requirements</title>
-    <style>
-        body {
-            background-image: url('https://i.ibb.co/3zwJf8D/2560px-UPMin-EBL.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 100%;  
-            margin: 0;
-            display: flex;  
-        }
-
-        .ReqBold, h3 {
-            font-weight: bold;
-            color: #273811;
-        }
-
-        .ReqIndent {
-            color: #273811;
-            text-indent: 25px;
-        }
-
-        .bgshade {
-            background-color: rgba(240, 248, 255, 0.852);
-            width: 500%;  
-            height: 100%;
-            padding: 30px 50px 50px 30px;
-        }
-
-        p, h3, ol, ul {
-            margin-left: 20px;
-            font-size: x-large;
-        }
-
-        .first {
-            margin-top: -10px;
-        }
-
-        .second {
-            text-align: justify;
-        }
-
-        button {
-            font-size: 40px;
-            font-weight: bold;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            border: none;
-            background-color: gray;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            margin: 0;
-        }
-
-        .lowertButtons {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        img {
-            width: 100%; 
-            height: 100%;
-            object-fit: cover; 
-        }
-
-        .info {
-            width: 100%;
-            margin-right: 20px;
-        }
-
-        /* Responsiveness for smaller screens */
-        @media (max-width: 768px) {
-            body {
-                flex-direction: column; 
-                overflow-x: hidden;
-            }
-
-            .bgshade {
-                width: 90%;  
-            }
-
-            img {
-                width: 111%;  
-                height: auto;  
-                object-fit: contain;  
-                margin-bottom: -5px;
-            }
-        }
-
-        /* For phone screens */
-        @media (max-width: 480px) {
-            body {
-                flex-direction: column; 
-                overflow-x: hidden;
-            }
-
-            .bgshade {
-                width: 95%;  
-            }
-
-            img {
-                width: 114%;  
-                height: auto;  
-                object-fit: contain;  
-                margin-bottom: -5px;
-            }
-        }
-
-    </style>
 </head>
 <body>
-    <section class="bgshade">
+    <!-- NAVIGATION-->   
+    <div class="header">
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <img id="homeLogo" src="https://i.ibb.co/2nNpfB4/Untitled-design-24.png" alt="">
+        <div class="university-text">
+            <p id="up">University of the Philippines</p>
+            <p id="down">Mindanao</p>
+        </div>
+            
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="Requirements.html">Requirements</a></li>
+                <li><a href="">Slots</a></li>
+                <li><a href="">Permit Forms</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+            
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="Requirements.html">Requirements</a></li>
+                <li><a href="">Slots</a></li>
+                <li><a href="">Permit Forms</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--List of Req-->
+    <div class="req-about">
         <div class="info">
-            <h3>Dormitory Accommodation</h3>
-            <p class="ReqBold"><i>Prioritization will be categorized into the following:</i></p>
-            <p class="ReqBold first">1. First Year Students</p>
-            <p class="ReqIndent first">> Living outside Davao City</p>
-            <p class="ReqBold second">2. UP Mindanao students who belong to the category of FDS (Full Discount with stipend) 
-                in their SLAS (Student Learning Assistance System) application results.
-            </p>
-            <p class="ReqIndent first">> Living outside Davao City</p>
-            <p class="ReqIndent first">> With Good Standing Status in the dormitory (not more than 5 minor offenses).</p>
-            <p class="ReqBold second">
-                3. Dormers with contract in the Garden and the Kitchen (not more than 5 minor offenses).<br><br>
-                4. UP Mindanao students living outside Davao City with good standing status.
-            </p>
-            <p class="ReqBold"><i>Prioritization of places living outside Davao City</i></p>
-            <ol>
-                <li>From Luzon</li>
-                <li>From Visayas</li>
-                <li>From Mindanao</li>
-            </ol>
-            <h3>Requirements</h3>
-            <ul>
-                <li>Fully Accomplished and Signed Dorm Contract</li>
-                <li>Acknowledgment Accountability Form</li>
-                <li>Data Privacy Law Form</li>
-                <li>1-piece 2X2 ID Picture (new dormer)</li>
-                <li>Payment of Dormitory Rental including appliances (2 months)</li>
-                <li>Photocopy of Form 5 (proof that the student is already enrolled) to be submitted on or before 15 days after the start of the classes</li>
-                <li>Have read the Dormitory Rules and Policies in the Student Handbook</li>
-            </ul>
-            <h3>Other Requirements</h3>
-            <ul>
-                <li>Personal Hygiene Kit and Disinfection Materials</li>
-                <li>Allowed Appliances (laptop, cellphone, electric fan, printer, study lamp)</li>
-                <li>Beddings</li>
-                <li>Drinking Water (Optional)</li>
-                <li>First Aid Kit and Thermometer</li>
-                <li>Room Cleaning Materials (broom, dustpan, feather-duster, etc.)</li>
-                <li>Trash Can</li>
-                <li>Pail and dipper</li>
-            </ul>
-            <br><br>
-            <div class="lowertButtons">
-                <button><</button>
-                <button>></button>
+        
+            <div class="class-info">
+                <h3>Dormitory Accommodation</h3>
+                <p class="ReqBold">
+                    <i>Prioritization will be categorized into the following:</i>
+                </p>
+                <p class="ReqBold-first">1. First Year Students</p>
+                <p class="ReqIndent-first">> Living outside Davao City</p>
+                <p class="ReqBold-second">2. UP Mindanao students who belong to the category of FDS (Full Discount with stipend) 
+                    in their SLAS (Student Learning Assistance System) application results.
+                </p>
+                <p class="ReqIndent-first">> Living outside Davao City</p>
+                <p class="ReqIndent-first">> With Good Standing Status in the dormitory (not more than 5 minor offenses).</p>
+                <p class="ReqBold-second">
+                    3. Dormers with contract in the Garden and the Kitchen (not more than 5 minor offenses).<br><br>
+                    4. UP Mindanao students living outside Davao City with good standing status.
+                </p>
+                <p class="ReqBold"><i>Prioritization of places living outside Davao City</i></p>
+                <ol>
+                    <li>From Luzon</li>
+                    <li>From Visayas</li>
+                    <li>From Mindanao</li>
+                </ol>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Fully Accomplished and Signed Dorm Contract</li>
+                    <li>Acknowledgment Accountability Form</li>
+                    <li>Data Privacy Law Form</li>
+                    <li>1-piece 2X2 ID Picture (new dormer)</li>
+                    <li>Payment of Dormitory Rental including appliances (2 months)</li>
+                    <li>Photocopy of Form 5 (proof that the student is already enrolled) to be submitted on or before 15 days after the start of the classes</li>
+                    <li>Have read the Dormitory Rules and Policies in the Student Handbook</li>
+                </ul>
+                <h3>Other Requirements</h3>
+                <ul>
+                    <li>Personal Hygiene Kit and Disinfection Materials</li>
+                    <li>Allowed Appliances (laptop, cellphone, electric fan, printer, study lamp)</li>
+                    <li>Beddings</li>
+                    <li>Drinking Water (Optional)</li>
+                    <li>First Aid Kit and Thermometer</li>
+                    <li>Room Cleaning Materials (broom, dustpan, feather-duster, etc.)</li>
+                    <li>Trash Can</li>
+                    <li>Pail and dipper</li>
+                </ul>
+                <br><br>
+                <div class="lowertButtons">
+                    <button class="back"><a href="index.html"><</a></button>
+                    <button class="sub"><a href="submissions.html">></a></button>
+                </div>
             </div>
         </div>
-    </section>
-    <div>
-        <img src="WEBSITE DESIGN (2).png" alt="Website-Design-2">
+
+        <div class="Picture"></div>
     </div>
+
+    <script>
+        function toggleMenu() {
+            var mobileNav = document.getElementById("mobileNav");
+            if (mobileNav.style.display === "flex") {
+                mobileNav.style.display = "none";
+            } else {
+                mobileNav.style.display = "flex";
+            }
+        }
+    </script>
 </body>
 </html>
