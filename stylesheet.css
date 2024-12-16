@@ -12,13 +12,13 @@ html, body {
 
 /*For Contacts*/
 /* General Styling for Contacts */
-.Contact_Page {
+#Contact_Page {
     display: flex;
     flex: 1;
     position: relative;
 }
 
-.Contact_Page > div {
+#Contact_Page > div {
     flex: 1;
     position: relative;
     margin-left: 2rem;
@@ -123,7 +123,7 @@ html, body {
         display: none;
     }
 
-    .Contact_Page {
+    #Contact_Page {
         flex-direction: column;
         height: auto;
     }
