@@ -8,6 +8,7 @@
 .Home_background > div {    
     flex: 1;
     position: relative;
+    margin-top: 70px;
 }
   
 .Obli {
