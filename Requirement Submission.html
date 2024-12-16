@@ -23,9 +23,9 @@
             <ul>
                 <li><a href="#About_background">About</a></li>
                 <li><a href="Requirements.html">Requirements</a></li>
-                <li><a href="Requirement Submission.html">Slots</a></li>
+                <li><a href="">Slots</a></li>
                 <li><a href="">Permit Forms</a></li>
-                <li><a href="#Contact_Page">Contacts</a></li>
+                <li><a href="more_info.html">More Info</a></li>
             </ul>
         </nav>
             
@@ -33,17 +33,18 @@
             <ul>
                 <li><a href="#About_background">About</a></li>
                 <li><a href="Requirements.html">Requirements</a></li>
-                <li><a href="Requirement Submission.html">Slots</a></li>
+                <li><a href="">Slots</a></li>
                 <li><a href="">Permit Forms</a></li>
-                <li><a href="#Contact_Page">Contacts</a></li>
+                <li><a href="more_info.html">More Info</a></li>
             </ul>
-        </nav>
+        </nav> 
     </div>
 
     <!--Sumission Form-->
     <div class="bgshade">
         <h3>Requirement Submission</h3>
-        <form action="/action_page.php">
+
+        <form>
             <fieldset>
                 <div class="name-section">
                     <div>
@@ -70,20 +71,22 @@
                     </div>
                     <div>
                         <label for="snumber">STUDENT NUMBER</label> <br>
-                        <input id="snumber" type="number">
+                        <input id="snumber" type="text">
                     </div>
                 </div>
                 <br>
-                <label class="submissionname" for="fileReq">Submission Bin</label>
-                <label class="submission" for="fileReq">Click Here!</label>
+                <label class="submissionname" for="fileReq">SUBMISSION BIN</label>
+                <label class="submission" for="fileReq">Click Here..</label>
                 <input id="fileReq" type="file">
                 
                 <div class="lowertButtons">
-                    <button><a href="index.html"></a><</button>
-                    <button><a href=""></a>></button>
+                    <button><a href="Requirements.html">&lt</a></button>
+                    <button type="button" onclick="alert('Form submitted successfully!');">&gt;</button>
                 </div>
             </fieldset>
         </form>
+        
+    </div>
     </div>  
     <script>
         function toggleMenu() {
