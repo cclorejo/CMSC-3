@@ -138,7 +138,7 @@ a .box:hover .box-desc {
     color: #28a745; 
 }
 
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
     .services_container{
         scale: 0.95;
     }
@@ -162,16 +162,17 @@ a .box:hover .box-desc {
         font-size: 30px;
         margin-left: -2px;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .services_container {
         flex-direction: column;
-        align-items: center;
     }
 
     a .box {
         width: 70%; /* Adjust width for smaller screens */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .Services_background > p:hover::after {
@@ -189,14 +190,15 @@ a .box:hover .box-desc {
         font-size: 2.5vw;
     }
 }
+
 @media (max-width: 412px) {
     .services_container {
         flex-direction: column;
-        align-items: center;
     }
 
     a .box {
         width: 90%; /* Adjust width for smaller screens */
+        margin-left: 2.2%;
     }
 
     .Services_background > p:hover::after {
