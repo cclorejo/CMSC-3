@@ -27,14 +27,14 @@
     box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.596); 
 }
 
-#up{
-    font-size: 10px;
+.up{
+    font-size: 30px;
     color: #ffffff;
     text-shadow: 2px 2px 3px #0000003b;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
-
+    margin: 0;
 }
 
 #down {
@@ -160,16 +160,15 @@ div p {
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 480px) {
     img {
         width: 40px;
         height: 40px;
     }
 
-    #up{
-        scale: 0.7;
-
-
+    .up {
+        font-size: x-large;
+        margin: 0;
     }
    
 }
