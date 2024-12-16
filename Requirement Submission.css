@@ -11,6 +11,7 @@ html, body {
 }
 
 .bgshade{
+    padding-top: 4%;
     background-image: url('https://i.ibb.co/H4fR1rL/WEBSITE-DESIGN-1.png');
     background-repeat: no-repeat;
     background-size: cover;
