@@ -138,32 +138,6 @@ a .box:hover .box-desc {
     color: #28a745; 
 }
 
-/* @media (max-width: 1280px) {
-    .services_container{
-        scale: 0.95;
-    }
-    a .box {
-        width: 30%; 
-    }
-
-    .Services_background {
-        padding: 2rem;
-        height: fit-content;
-    }
-
-    .box-title{
-        font-size: 2.5vw;
-    }
-    .box-desc{
-        font-size: 1.4vw;
-    }
-    
-    .Services_background > p {
-        font-size: 30px;
-        margin-left: -2px;
-    }
-} */
-
 @media (max-width: 768px) {
     .services_container {
         flex-direction: column;
