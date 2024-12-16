@@ -11,29 +11,81 @@ html, body {
 }
 
 /*For Contacts*/
+/* General Styling for Contacts */
 .Contact_Page {
     display: flex;
     flex: 1;
     position: relative;
 }
-  
+
 .Contact_Page > div {
     flex: 1;
     position: relative;
     margin-left: 2rem;
 }
-  
+
 .contacts_container {
     background-color: #6d0605;
     color: white;
     padding: 2rem;
-}   
+}
+
+.contacts_container > p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.contacts_container > p::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 5px;
+    background-color: #ffbd59;
+    margin-top: 0.5rem;
+}
+
+.point_person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.point_person img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffbd59;
+    margin-right: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.point_person:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.names .person_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffbd59;
+}
+
+.names .person_det {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ffffff;
+    line-height: 1.4;
+}
 
 .Contacts_Obli {
     background-image: url('https://i.ibb.co/RpC9VFk/oblation-1-1-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .shade-left {
@@ -45,35 +97,26 @@ html, body {
     background: linear-gradient(to right, #6d0605, rgba(109, 7, 5, 0.5), rgba(109, 7, 5, 0.2) 50%, rgba(109, 7, 5, 0));
 }
 
-.contacts_container > p {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contacts_container > p {
+        font-size: 2rem;
+    }
 
-.point_person {
-    display: flex;
-    flex: 1;
-    width: fit-content;
-    height: fit-content;
-}
+    .point_person img {
+        width: 75px;
+        height: 75px;
+    }
 
-.point_person img {
-    margin-top: 3%;
-    overflow: hidden;
-    width: 30%;
-    height: 30%;
-    border-radius: 100%;
-    aspect-ratio: 1 / 1;
-} 
+    .names .person_name {
+        font-size: 1.3rem;
+    }
 
-@media (max-width: 500px) {
-    .services_container {
-        flex-direction: column;
-        align-items: center;
+    .names .person_det {
+        font-size: 0.9rem;
     }
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .Contacts_Obli {
         display: none;
@@ -81,18 +124,40 @@ html, body {
 
     .Contact_Page {
         flex-direction: column;
-        height: auto; /* Adjust height to fit content */
+        height: auto;
     }
 
     .contacts_container {
-        flex: 1;
-        width: 100%;
-        height: auto;
-        padding: 1rem; /* Reduce padding for smaller screens */
+        padding: 1rem;
+    }
+
+    .point_person {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .point_person img {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
     }
 }
 
-.point_person names{
-    margin-top: 3rem;
+@media (max-width: 480px) {
+    .contacts_container > p {
+        font-size: 1.8rem;
+    }
+
+    .names .person_name {
+        font-size: 1.2rem;
+    }
+
+    .names .person_det {
+        font-size: 0.85rem;
+    }
+
+    .point_person img {
+        width: 65px;
+        height: 65px;
+    }
 }
 
