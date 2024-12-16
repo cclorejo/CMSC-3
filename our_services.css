@@ -10,9 +10,9 @@
 
 .services_container {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap; 
+    justify-content: space-evenly; /* Ensure even spacing between boxes */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 1rem; /* Add some space between rows on smaller screens */
     margin-bottom: 50px;
 }
   
@@ -20,9 +20,12 @@ a .box {
     background: #fff;
     border: 4px solid #b8b8b8;
     border-radius: 5%;
-    width: 450px; 
+    width: 22%; /* Adjust width to fit 4 boxes in one row */
+    min-width: 200px; /* Set a minimum width to prevent boxes from shrinking too much */
     text-align: center;
     overflow: hidden;
+    box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.062); 
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
   
 /* Image Styling */
@@ -87,6 +90,7 @@ a .box {
     overflow: hidden;
     box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.062); 
     transition: transform 0.3s ease, border-color 0.3s ease; 
+    scale: 94%;
 }
 
 a .box:hover {
@@ -137,7 +141,8 @@ a .box:hover .box-title {
 a .box:hover .box-desc {
     color: #28a745; 
 }
-
+@media (max-width: 1024px) {
+}
 @media (max-width: 768px) {
     .services_container {
         flex-direction: column;
@@ -163,6 +168,10 @@ a .box:hover .box-desc {
     .box-desc{
         font-size: 2.5vw;
     }
+
+    .services_container {
+        flex-direction: column; /* Stacks boxes vertically */
+    }
 }
 
 @media (max-width: 412px) {
@@ -172,7 +181,8 @@ a .box:hover .box-desc {
 
     a .box {
         width: 90%; /* Adjust width for smaller screens */
-        margin-left: 2.2%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .Services_background > p:hover::after {
