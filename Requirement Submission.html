@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirement Submission</title>
+    <style>
+        body {
+            background-image: url('https://i.ibb.co/3zwJf8D/2560px-UPMin-EBL.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .bgshade {
+            background-color: rgba(240, 248, 255, 0.897);
+            width: 100%;
+            height: 100%;
+            padding: 50px 0 50px 0;
+        }
+
+        fieldset {
+            border-radius: 10px;
+            width: 75%;
+            padding: 20px;
+        }
+
+        .name-section, .Info-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10%;
+        }
+
+        input {
+            border-color: gray;
+            border-radius: 17px;
+            height: 20px;
+            width: 120%;
+            padding: 5px 10px 5px 10px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #273811;
+            font-size: xx-large;
+        }
+
+        h3 {
+            margin-left: 100px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        label {
+            font-style: italic;
+        }
+
+        button {
+            font-size: 40px;
+            font-weight: bold;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background-color: gray;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .lowertButtons {
+            display: flex;
+            justify-content: space-around;
+            clear: both;
+            
+        }
+
+        #fileReq {
+            visibility: hidden;
+        }
+
+        .submission {
+            background-color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            border: solid 2px gray;
+            border-radius: 17px;
+            cursor: pointer;
+            width: 97.5%;
+            height: 25px;
+            float: left;
+            margin-bottom: 50px;
+            display: flex;                
+            justify-content: center;      
+            align-items: center;           
+        }
+
+        .submissionname {
+            font-size: large;
+        }
+
+        
+
+        @media(max-width: 1000px) {
+            h3 {
+                font-size: large;
+            }
+
+            .name-section, .Info-section {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            input, .submission {
+                width: 94%;
+            }
+
+            .lowertButtons {
+                gap: 10px;
+            }
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="bgshade">
+        <h3>Requirement Submission</h3>
+        <form action="/action_page.php">
+            <fieldset>
+                <div class="name-section">
+                    <div>
+                        <label for="lname">LAST NAME</label> <br>
+                        <input id="lname" type="text">
+                    </div>
+                    <div>
+                        <label for="fname">FIRST NAME</label> <br>
+                        <input id="fname" type="text">
+                    </div>
+                    <div>
+                        <label for="mname">MIDDLE NAME</label> <br>
+                        <input id="mname" type="text">
+                    </div>
+                </div>
+                <div class="Info-section">
+                    <div>
+                        <label for="course">COURSE</label> <br>
+                        <input id="course" type="text">
+                    </div>
+                    <div>
+                        <label for="year">YEAR</label> <br>
+                        <input id="year" type="text">
+                    </div>
+                    <div>
+                        <label for="snumber">STUDENT NUMBER</label> <br>
+                        <input id="snumber" type="number">
+                    </div>
+                </div>
+                <br>
+                <label class="submissionname" for="fileReq">Submission Bin</label>
+                <label class="submission" for="fileReq">Click Here!</label>
+                <input id="fileReq" type="file">
+                
+                <div class="lowertButtons">
+                    <button><</button>
+                    <button>></button>
+                </div>
+            </fieldset>
+        </form>
+        
+    </div>  
+</body>
+</html>
