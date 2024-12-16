@@ -159,7 +159,8 @@ button a {
     margin-bottom: 50px;
     display: flex;                
     justify-content: center;      
-    align-items: center;           
+    align-items: center;
+    color: gray;    
 }
 
 .submissionname {
